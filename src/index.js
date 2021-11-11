@@ -1,17 +1,19 @@
+
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom'; 
+// import PrimeraApp from './PrimeraApp';
+import './index.css'
+import CounterApp from './CounterApp';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+//------------------------------------------------------------------------------------------------------------------
+// const saludo = <h1>Hola Mundo</h1>; //esto no es un componente, es JSX, y para que funcione necesitamos de React
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// const divRoot = document.querySelector('#root');
+
+// ReactDOM.render(saludo, divRoot);
+//------------------------------------------------------------------------------------------------------------------
+
+const divRoot = document.querySelector('#root');
+
+// ReactDOM.render(<PrimeraApp nombre="Javier"/>, divRoot);
+ReactDOM.render(<CounterApp value = {5} />, divRoot); //los valores numéricos se pasan entre llaves
