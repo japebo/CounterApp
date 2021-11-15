@@ -16,4 +16,4 @@ import CounterApp from './CounterApp';
 const divRoot = document.querySelector('#root');
 
 // ReactDOM.render(<PrimeraApp nombre="Javier"/>, divRoot);
-ReactDOM.render(<CounterApp value = {5} />, divRoot); //los valores numéricos se pasan entre llaves
+ReactDOM.render(<CounterApp />, divRoot); //los valores numéricos se pasan entre llaves
